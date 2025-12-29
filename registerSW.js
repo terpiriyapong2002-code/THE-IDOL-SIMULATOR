@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/THE-IDOL-SIMULATOR/sw.js', { scope: '/THE-IDOL-SIMULATOR/' })})}

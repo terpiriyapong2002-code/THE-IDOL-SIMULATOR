@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/THE-IDOL-SIMULATOR/idollogo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>thenewgame</title>
+    <link rel="manifest" href="manifest.json" />
+    <script type="module" crossorigin src="/THE-IDOL-SIMULATOR/assets/index-DPEfXsVc.js"></script>
+    <link rel="stylesheet" crossorigin href="/THE-IDOL-SIMULATOR/assets/index--EuDocjP.css">
+  <link rel="manifest" href="/THE-IDOL-SIMULATOR/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/THE-IDOL-SIMULATOR/registerSW.js"></script></head>
+  <body>
+    <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('service-worker.js').then(registration => {
+            console.log('SW registered: ', registration);
+          }).catch(registrationError => {
+            console.log('SW registration failed: ', registrationError);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
